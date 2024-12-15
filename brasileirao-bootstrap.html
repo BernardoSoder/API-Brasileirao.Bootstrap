@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      
+      body {
+          margin: 0;
+      }
+
+      .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 45px;
+          padding: 0 10px;
+      }
+
+      .menu-items {
+          display: flex;
+          gap: 5px;
+      }
+
+      .menu-items div {
+          font-size: 20px;
+          font-family: Cambria, serif;
+          font-weight: bold;
+          padding: 5px;
+          border-bottom: 2px solid transparent;
+      }
+
+      .globo { color: #0669de; }
+      .g1 { color: #c4170c; }
+      .ge { color: #06aa48; }
+      .gshow { color: #ff6700; }
+      .globoplay { color: #fb0334; }
+      .cartola { color: #e3672b; }
+      .sportv { color: #08053a; }
+
+      .menu-items div:hover {
+          border-bottom: 2px solid currentColor;
+          cursor: pointer;
+      }
+
+      .account {
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 20px;
+        font-family: Cambria, serif;
+      }
+
+      .account div:hover {
+        color: blue;
+      }
+
+      .account2 {
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 20px;
+        font-family: Cambria, serif;
+      }
+
+      .account2 div:hover {
+        color: blue;
+      }
+
+      .account .icon {
+        font-size: 30px;
+        margin: 0 5px;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Varela Round', sans-serif;
+      }
+
+      .bloco-verde {
+            background-color: #06aa48;
+            color: white;
+            height: 74px;
+            position: relative;
+        }
+
+        .bloco-verde::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .menu-icon {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .logo-ge {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container2 img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .center-title {
+            font-size: 32px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .bloco-verde2{
+          background-color: #06aa48;
+        }
+
+        .search-icon{
+          position: absolute;
+          margin-left: 5px;
+          margin-top: 6px;
+        }
+
+        .search{
+          font-weight: bold;
+          color: white;
+          size: 10px;
+          background-color: #05903d;
+          border: none;
+          width: 70%;
+          height: 30px;
+          border-radius: 2px;
+        }
+
+        .search::placeholder{
+          font-size: 14px;
+          color: white;
+          padding-left: 24px;
+        }
+
+        .menu-option{
+          color: rgba(255, 255, 255, 0.533) !important
+        }
+
+        .menu-option:hover{
+          color: #ffffff !important
+        }
+
+        .comercial{
+                display: flex;
+                cursor: pointer;
+                justify-content: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+        table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 0;
+            }
+
+            td {
+                padding: 10px;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            th{
+                padding: 10px;
+                background-color: transparent;
+                font-size: 13px;
+                color: rgba(146, 135, 135, 0.8);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            th:first-child{
+                text-align: left;
+            }
+
+            td:nth-child(even){
+                background-color: #f9f9f9;
+            }
+
+            td:nth-child(odd) {
+                background-color: #ffffff;
+            }
+
+            td:first-child {
+                text-align: left;
+                padding-left: 10px;
+            }
+            td{
+              border: 1px solid;
+              border-color: rgba(0, 0, 0, 0.2);
+            }
+            th{
+
+              border-top: 1px solid;
+              border-color: rgba(0, 0, 0, 0.1);
+              text-align: center;
+            }
+
+            table {
+                font-size: 9px;
+                flex-direction: column;
+                overflow: auto;
+            }
+
+            .container3 {
+                flex-direction: column;
+            }
+
+            
+            .tabela{
+                overflow: auto;
+            }
+
+            .bolinha-verde {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: green;
+                border-radius: 40%;
+                margin: 0 2px;
+            }
+
+            .bolinha-branca {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: lightgrey;
+                border-radius: 40%;
+                margin: 0 2px;
+            }
+
+            .bolinha-vermelha {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: red;
+                border-radius: 40%;
+                margin: 0 2px;
+            }
+
+            .tabela-classificacao {
+              width: 45%;
+              margin: 20px; 
+              position: relative;
+              float: left; 
+            }
+
+
+            table td {border-left: none; border-right: none}
+
+            .jogos{
+              display: block;
+              margin: 20px;
+              width: 507px;
+              flex-direction: column;
+            }
+
+            .rodada {
+                border-top: 1px solid #ccc;
+                padding: 11px;
+                height: 43px;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .jogos-rodada{
+                display: flex;
+                border-bottom: 1px solid #ccc;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .jogo {
+                padding: 13px;
+                margin-bottom: 15px;
+                size: 100px;
+                width: 300px;
+            }
+
+            .jogo .titulo{
+                display: flex;
+                justify-content: center;
+                align-content: space-evenly;
+                color: black;
+            }
+
+            .estadio, .data-hora {
+                font-size: 14px;
+                color: #666;
+            }
+
+            .times {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            .versus {
+                font-size: 48px;
+                font-weight: bold;
+            }
+
+            .titulo{
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                color: black;
+            }
+
+            .titulo-tabela {
+            position: absolute;
+            margin: 0;
+            margin-left: 20px;
+            top: -20px;
+            left: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+          }
+
+          .titulo-rodada {
+            position: absolute;
+            margin: 0;
+            margin-left: 840px;
+            top: -20px;
+            left: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+          }
+
+          @media (max-width: 576px) {
+            .container {
+              flex-direction: column;
+              align-items: flex-start;
+              height: auto;
+              padding: 10px;
+            }
+
+            .menu-items {
+              flex-wrap: wrap;
+              gap: 10px;
+            }
+
+            .bloco-verde .center-title {
+              font-size: 24px;
+              text-align: center;
+            }
+
+            .tabela-classificacao,
+            .jogos {
+              width: 100%;
+              margin: 0 auto;
+              float: none;
+            }
+
+            .titulo-tabela, .titulo-rodada {
+              position: static;
+              text-align: center;
+              margin: 20px 0;
+            }
+
+            .rodada {
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+
+            .jogo {
+              width: 100%;
+            }
+
+            .times {
+              flex-direction: column;
+              text-align: center;
+            }
+          }
+
+          @media (min-width: 576px) and (max-width: 768px) {
+            .container {
+              flex-wrap: wrap;
+            }
+
+            .menu-items {
+              gap: 8px;
+            }
+
+            .bloco-verde .center-title {
+              font-size: 28px;
+            }
+
+            .tabela-classificacao {
+              width: 100%;
+            }
+
+            .jogos {
+              width: 100%;
+            }
+
+            .titulo-tabela, .titulo-rodada {
+              font-size: 24px;
+            }
+          }
+
+          @media (min-width: 768px) and (max-width: 992px) {
+            .menu-items div {
+              font-size: 18px;
+            }
+
+            .bloco-verde .center-title {
+              font-size: 30px;
+            }
+
+            .tabela-classificacao,
+            .jogos {
+              width: 48%;
+              margin: 0 1%;
+              float: none;
+            }
+
+            .rodada {
+              font-size: 16px;
+            }
+          }
+
+          @media (min-width: 992px) {
+            .container {
+              justify-content: space-between;
+            }
+
+            .menu-items div {
+              font-size: 20px;
+            }
+
+            .bloco-verde .center-title {
+              font-size: 32px;
+            }
+
+            .tabela-classificacao {
+              width: 45%;
+            }
+
+            .jogos {
+              width: 50%;
+            }
+
+            .titulo-tabela, .titulo-rodada {
+              font-size: 30px;
+            }
+          }
+
+    </style>
+  </head>
+  <body>
+   
+    <div class="container-fluid d-flex align-items-center justify-content-between py-2 padding: 0 10px" style="height: 45px; width: 1280px;">
+      <div class="menu-items d-flex gap-3">
+        <div class="text-primary fs-5" style="font-family: sans-serif;">globo.com</div>
+        <div class="fw-bold fs-5" style="color: #c4170c;">g1</div>
+        <div class="fw-bold fs-5" style="color: #06aa48;">ge</div>
+        <div class="fw-bold fs-5" style="color: #ff6700;">gshow</div>
+        <div class="fw-bold fs-5" style="color: #fb0334;">globoplay</div>
+        <div class="fw-bold fs-5" style="color: #e3672b;">cartola</div>
+        <div class="fw-bold fs-5" style="color: #08053a;">sportv</div>
+      </div>
+
+      <div class="d-flex gap-5 align-items-center">
+        <div class="account2">
+          <div class="signup">Assine já</div>
+        </div>
+
+        <div class="account">
+          <span class="material-icons icon">account_circle</span>
+          <div>Conta Globo</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bloco-verde d-flex align-items-center justify-content-between px-3">
+
+      <div class="d-flex align-items-center gap-3">
+          <span class="menu-icon">≡ menu</span>
+          <span class="logo-ge">ge</span>
+          <div class="container2">
+              <img src="https://s3.glbimg.com/v1/AUTH_378ee63fe83141e69caddd838034e850/static/components/escudo-header.png" alt="Logo">
+          </div>
+      </div>
+
+
+      <div class="center-title text-center">
+          BRASILEIRÃO SÉRIE A
+      </div>
+
+
+      <div class="direita-menu">
+        <div class="container-input-search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="search-icon" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+            </svg>
+            <input class="search" placeholder="BUSCAR">
+        </div>
+        <div class="busca"></div>
+      </div>
+    </div>
+
+    <div class="bloco-verde2 text-white d-flex justify-content-between align-items-center px-3" style="height: 50px;">
+      <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-white text-decoration-none fw-bold fs-5 menu-option" style="color: #ffffff !important;">classificação</a>
+          <a href="#" class="text-white text-decoration-none fw-bold fs-5 menu-option">simulador</a>
+          <a href="#" class="text-white text-decoration-none fw-bold fs-5 menu-option">vídeos</a>
+          <a href="#" class="text-white text-decoration-none fw-bold fs-5 menu-option">seja pro</a>
+          <a href="#" class="text-white text-decoration-none fw-bold fs-5 menu-option">VAR</a>
+      </div>
+    </div>
+    <div class="comercial">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b91256123826621.60f6d5887b589.jpg">
+    </div>
+
+    <div style="margin-left: 300px; display: flex; flex-wrap: nowrap; position: relative;">
+      <h2 class="titulo-tabela">TABELA</h2>
+      <table class="tabela-classificacao">
+        <thead>
+          <tr>
+            <th scope="col">CLASSIFICAÇÃO</th>
+            <th scope="col">P</th>
+            <th scope="col">J</th>
+            <th scope="col">V</th>
+            <th scope="col">E</th>
+            <th scope="col">D</th>
+            <th scope="col">GP</th>
+            <th scope="col">GC</th>
+            <th scope="col">SG</th>
+            <th scope="col">%</th>
+            <th scope="col">ÚLT. JOGOS</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-times">
+          <!-- Linhas da tabela preenchidas pelo JS  =) -->
+        </tbody>
+      </table>
+    
+      <!-- Barra vertical no centro -->
+      <div style="display: flex !important; border-right: 1px solid lightgray; width: 1px; height: auto; margin-left: 20px; margin-right: 20px;"></div>
+      <h2 class="titulo-rodada">JOGOS</h2>
+      <!-- Bloco "JOGOS" ao lado -->
+      <div style="margin-left: 20px; flex: 1;">
+        <div class="jogos">
+          <div class="rodada">
+            <img src="seta-verde-esquerda.png" alt="Anterior">
+            <span>32ª RODADA</span>
+            <img src="seta-verde-direita.png" alt="Próxima">
+          </div>
+          <div class="jogos-rodada">
+            <!-- Os jogos serão preenchidos aqui via JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+              window.onload = function() {
+            $.ajax({
+                url: "https://api.api-futebol.com.br/v1/campeonatos/10/tabela",
+                headers: {"Authorization": "Bearer test_2791e15a06f69ed4e48deee2badf50"},
+                type: "GET",
+                success: function(data) {
+                    populateTable(data);
+                },
+                error: function(error) {
+                    alert("Deu erro na requisição: " + error.toString());
+                }
+            });            
+            
+            $.ajax({
+                url: "https://api.api-futebol.com.br/v1/campeonatos/10/rodadas/32",
+                headers: {"Authorization": "Bearer test_2791e15a06f69ed4e48deee2badf50"},
+                type: "GET",
+                success: function(data) {
+                    populateRodada(data);
+                },
+                error: function(error) {
+                    alert("Deu erro na requisição: " + error.toString());
+                }
+            });
+        }
+
+        function populateTable(data) {
+            const tabela = $('#tabela-times');
+            tabela.empty(); 
+            
+            data.forEach((dadosTime) => {
+
+                var ultimosJogos = '';
+
+                dadosTime.ultimos_jogos.forEach(jogos => {
+                    if (jogos == "v"){
+                        ultimosJogos += '<span class="bolinha-verde"></span>';
+                    }
+                    else if(jogos == "e"){
+                        ultimosJogos += '<span class="bolinha-branca"></span>';
+                    }
+                    else{
+                        ultimosJogos += '<span class="bolinha-vermelha"></span>';
+                    }
+                })               
+
+                const row = `<tr>
+                    <td class="time"><strong style="color: blue; font-size: 24px;">${dadosTime.posicao}</strong> ${dadosTime.time.nome_popular}</td>
+                    <td>${dadosTime.pontos}</td>
+                    <td>${dadosTime.jogos}</td>
+                    <td>${dadosTime.vitorias}</td>
+                    <td>${dadosTime.empates}</td>
+                    <td>${dadosTime.derrotas}</td>
+                    <td>${dadosTime.gols_pro}</td>
+                    <td>${dadosTime.gols_contra}</td>
+                    <td>${dadosTime.saldo_gols}</td>
+                    <td>${dadosTime.aproveitamento}</td>
+                    <td>${ultimosJogos}</td>
+                </tr>`;
+                tabela.append(row);
+            });
+        }
+
+        function populateRodada(data){
+            const jogos = $('.jogos-rodada');
+            jogos.empty();
+
+            data.partidas.forEach((dadosJogos) => {
+                const row = `
+                <div class="jogo">
+                    <div class="titulo">
+                        <span>${dadosJogos.estadio.nome_popular + " - "}</span>
+                        <strong> ${dadosJogos.data_realizacao} . ${dadosJogos.hora_realizacao}</strong>
+                    </div>
+                    </span> 
+                    <div class="times">
+                        <div>
+                            <div style="display: flex; align-items: center;">${dadosJogos.time_mandante.sigla}<img style="margin: 10px; width: 30px; height: 30px;" src="${dadosJogos.time_mandante.escudo}"></div>
+                        </div>
+                        <div style="font-size: 20px;">
+                        <strong>${dadosJogos.placar_mandante}</strong> x <strong>${dadosJogos.placar_visitante}</strong>
+                        </div>
+                        <div>
+                            <div style="display: flex; align-items: center;">${dadosJogos.time_visitante.sigla}<img style="margin: 10px; width: 30px; height: 30px;" src="${dadosJogos.time_visitante.escudo}"></div>
+                        </div>
+                    </div>
+                </div>`;
+                jogos.append(row);
+            });
+        }
+    </script>
+  </body>
+</html>
